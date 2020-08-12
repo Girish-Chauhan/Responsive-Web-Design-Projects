@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+
+    <main id="main-element">
+
+        <h1 id="title">Restaurant Evaluation Survey</h1>
+        <p id="description">Please let us know how was the food and service</p>
+
+        <form action="" id="survey-form">
+
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" min="18" max="100" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <label for="visit-date" id="date-label">Date of visit</label>
+                <input type="date" id="visit-date">
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown" id="dropdown-label">Dine In / Take Out</label>
+                <select id="dropdown">
+                    <option value="select" selected>Select an option</option>
+                    <option value="dine-in">Dine In</option>
+                    <option value="take-out">Take Out</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Quality of food</p>
+                <ul>
+                    <li><input type="radio" id="excellent" name="food-quality" value="excellent"><label for="excellent"
+                            id="excellent-label">Excellent</label></li>
+                    <li><input type="radio" id="good" name="food-quality" value="good"><label for="good"
+                            id="good-label">Good</label></li>
+                    <li><input type="radio" id="average" name="food-quality" value="average"><label for="average"
+                            id="average-label">Average</label></li>
+                    <li><input type="radio" id="dissatisfied" name="food-quality" value="dissatisfied"
+                            id="dissatisfied"><label for="dissatisfied">Dissatisfied</label></li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <p>What would you like to see improved? (check all that apply)</p>
+                <ul>
+                    <li><input type="checkbox" id="cleanliness" name="improvements" value="cleanliness"><label
+                            for="cleanliness" id="cleanliness-label">Cleanliness</label></li>
+                    <li><input type="checkbox" id="order-accuracy" name="improvements"
+                            value="order order-accuracy"><label for="order-accuracy" id="order-accuracy-label">Order
+                            Accuracy</label></li>
+                    <li><input type="checkbox" id="speed-of-service" name="improvements" value="speed-of-service"><label
+                            for="speed-of-service" id="speed-of-service-label">Speed of Service</label></li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label for="suggessions">Any comments, questions or suggestions?</label>
+                <textarea id="suggessions"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" id="reset" value="Reset">
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
